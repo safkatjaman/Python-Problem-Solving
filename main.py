@@ -23,53 +23,53 @@ for friendPrint in friends:
 
 """ While loop """
 i = 1
-sum = 0 
+sum1 = 0 
 while i <= 10:
-      sum = sum + i
+      sum1 = sum1 + i
       i += 1
-print(sum)
+print(sum1)
 
 
 
 """ Sum of Even """
 i = 1
-sum = 0
+sum2 = 0
 while i <= 20:
       if i % 2 == 0:
-            sum = sum + i
+            sum2 = sum2 + i
       i += 1
-print(sum)
+print(sum2)
 
 
 
 ''' Sum of Odd '''
 i = 1 
-sum = 0
+sum3 = 0
 while i <= 50:
       if i % 2 != 0:
-            sum = sum + i
+            sum3 = sum3 + i
       i += 1 
-print(sum)
+print(sum3)
 
 
 
 ''' Break in While '''
-count = 0
-while count < 10:
-      if count == 5:
+count1 = 0
+while count1 < 10:
+      if count1 == 5:
             break
-      print(count)
-      count += 1
+      print(count1)
+      count1 += 1
 
 
 
 ''' Continue in While '''
-count = 0
-while count < 10:
-      count += 1
-      if count % 2 == 0:
+count2 = 0
+while count2 < 10:
+      count2 += 1
+      if count2 % 2 == 0:
             continue
-      print(count)
+      print(count2)
 
 
 
@@ -99,8 +99,8 @@ multipleParameter(10, 10)
 
 
 ''' Return in a Function '''
-def numberSubtract(num1, num2):
-      return  num1 - num2
+def numberSubtract(num3, num4):
+      return  num3 - num4
 subtraction = numberSubtract(10, 10)
 print(subtraction)
 
@@ -134,12 +134,12 @@ print(count2)
 
 """ Count Vowles """
 def count_vowles(sentence):
-      count = 0
+      count3 = 0
       vowles = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
       for char in sentence:
             if char in vowles:
-                  count = count + 1
-      return count
+                  count3 = count3 + 1
+      return count3
 print(count_vowles(input('Please Enter a Sentence: ')))
 
 
@@ -170,35 +170,35 @@ print(fibonacci(9))
 
 
 """ User Input To Number """
-def takingNumber(num1, num2):
-      num1 = int(num1)
-      num2 = float(num2)
-      return num1 * num2
+def takingNumber(num5, num6):
+      num5 = int(num5)
+      num6 = float(num6)
+      return num5 * num6
 
 print(takingNumber(input('Please Enter a Number: '), input('Please Enter another Number: ')))
 
 """ Another Solve Of User Input To Number """
-firstNumber = int(input('Please Enter the first Number: '))
-secondNumber = float(input('Please Enter the second Number: '))
-result = firstNumber * secondNumber
+firstNumber1 = int(input('Please Enter the first Number: '))
+secondNumber1 = float(input('Please Enter the second Number: '))
+result1 = firstNumber1 * secondNumber1
 
-print('The multiplication of your numbers is: ', result)
+print('The multiplication of your numbers is: ', result1)
 
 
 
 """ Math Power """
 import math
-def userInputPower(num1, num2):
-      num1 = int(num1)
-      num2 = int(num2)
-      return(math.pow(num1, num2))
+def userInputPower(num7, num8):
+      num7 = int(num7)
+      num8 = int(num8)
+      return(math.pow(num7, num8))
 print(userInputPower(input('Please Enter a Number: '), input('Please Enter another Number: ')))
 
 """ Another Solve of Math Power """
 baseNumber = int(input('Please Enter Base Number: '))
 powerNumber = int(input('Please Enter Power Number: '))
-result = baseNumber ** powerNumber
-print('Your result is: ', result)
+result2 = baseNumber ** powerNumber
+print('Your result is: ', result2)
 
 
 
@@ -217,17 +217,17 @@ import math
 
 def floorDivision(number1, number2):
       return number1 / number2
-firstNumber = int(input('Enter first number: '))
-secondNumber = int(input('Enter second number: '))
-printDivisionResult = floorDivision(firstNumber, secondNumber)
-print(firstNumber, '/', secondNumber, '=', printDivisionResult)
+firstNumber2 = int(input('Enter first number: '))
+secondNumber2 = int(input('Enter second number: '))
+printDivisionResult = floorDivision(firstNumber2, secondNumber2)
+print(firstNumber2, '/', secondNumber2, '=', printDivisionResult)
 print('The floor of ', printDivisionResult, ' is ', math.floor(printDivisionResult))
 
 """ Another solution of Floor Division """
 numDiv1 = int(input('Enter first number: '))
 numDiv2 = int(input('Enter second number: '))
-result = numDiv1 // numDiv2
-print(result)
+result3 = numDiv1 // numDiv2
+print(result3)
 
 
 
@@ -262,3 +262,89 @@ swappingNumber1 = swappingNumber1 + swappingNumber2
 swappingNumber2 = swappingNumber1 - swappingNumber2
 swappingNumber1 = swappingNumber1 - swappingNumber2
 print('Swapped first number: ', swappingNumber1, '\nSwapped second number: ', swappingNumber2)
+
+
+
+""" Max of two """
+max1 = int(input('Enter a number: '))
+max2 = int(input('Enter another number: '))
+
+result4 = max(max1, max2)
+print('The max number is: ', result4)
+
+""" Another solution of Max of two """
+maxNum1 = int(input('Enter a number: '))
+maxNum2 = int(input('Enter another number: '))
+
+if maxNum1 > maxNum2:
+      print(maxNum1, ' is the max number.')
+else:
+      print(maxNum2, ' is the max number.')
+
+""" Another solution of Max of two """
+maxNumber1 = int(input('Enter a number: '))
+maxNumber2 = int(input('Enter another number: '))
+
+if maxNumber1 - maxNumber2 > 0:
+      print(maxNumber1, ' is the max number.')
+else:
+      print(maxNumber2, ' is the max number.')
+
+
+
+""" Max of three """
+maxOfThree1 = int(input('Enter a number: '))
+maxOfThree2 = int(input('Enter another number: '))
+maxOfThree3 = int(input('Enter another number: '))
+
+result5 = max(maxOfThree1, maxOfThree2, maxOfThree3)
+print('The max number is: ', result5)
+
+""" Another solution of Max of three """
+maxOfThreeNum1 = int(input('Enter a number: '))
+maxOfThreeNum2 = int(input('Enter another number: '))
+maxOfThreeNum3 = int(input('Enter another number: '))
+
+if maxOfThreeNum1 > maxOfThreeNum2 and maxOfThreeNum1 > maxOfThreeNum3:
+      print('The max number is: ', maxOfThreeNum1)
+elif maxOfThreeNum2 > maxOfThreeNum1 and maxOfThreeNum2 > maxOfThreeNum3:
+      print('The max number is: ', maxOfThreeNum2)
+else: 
+      print('The max number is: ', maxOfThreeNum3)
+
+
+
+""" Average of numbers """
+firstNumber3 = int(input('Enter first number: '))
+secondNumber3 = int(input('Enter second number: '))
+thirdNumber = int(input('Enter third number: '))
+fourthNumber = int(input('Enter fourth number: '))
+fifthNumber = int(input('Enter fifth number: '))
+
+numberList = [firstNumber3, secondNumber3, thirdNumber, fourthNumber, fifthNumber]
+
+result6 = (firstNumber3 + secondNumber3 + thirdNumber + fourthNumber + fifthNumber) / len(numberList)
+print('Average of the five numbers is: ', round(result6, 2))
+
+""" Another solution of Average of numbers """
+len = int(input('How many numbers you want to enter: '))
+
+nums = []
+
+for i in range(0, len):
+      element = int(input('Enter element: '))
+      nums.append(element)
+total1 = sum(nums)
+avg1 = total1 / len
+print('Average of elements you entered is: ', round(avg1, 2))
+
+""" Another solution of Average of numbers """
+length = int(input('How many numbers do you want to enter: '))
+
+total2 = 0
+
+for i in range(0, length):
+      elements = int(input('Enter element: '))
+      total2 = total2 + elements
+avg2 = total2 / length
+print('Average of elements you entered is: ', round(avg2, 2))
